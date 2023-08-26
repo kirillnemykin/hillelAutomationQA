@@ -15,7 +15,7 @@ public class Main {
         chromedriverManager.setup();
         WebDriver browser = chromedriverManager.create();
         browser.manage().window().maximize();
-        browser.manage().timeouts().implicitlyWait(Duration.ofMinutes(5));
+        browser.manage().timeouts().implicitlyWait(Duration.ofMinutes(10));
 
         browser.get("https://ithillel.ua/");
         Thread.sleep(3000);
