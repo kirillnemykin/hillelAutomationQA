@@ -12,7 +12,7 @@ public class Main {
         chromedriverManager.setup();
         WebDriver driver = chromedriverManager.create();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         TestingCoursesPage testingCoursesPage = new TestingCoursesPage(driver);
 
